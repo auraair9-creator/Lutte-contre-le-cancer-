@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7b0f2f">
+  <title>Lutte contre le cancer — Soutenir Maman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="brand">♥ LUTTE CONTRE LE CANCER</div>
+      <a href="#don" class="nav-btn">Faire un don</a>
+    </nav>
+    <div class="hero-content">
+      <span class="badge">UN PETIT GESTE • UN GRAND ESPOIR</span>
+      <h1>Ensemble, aidons<br><em>Maman</em> à se battre.</h1>
+      <p>Ma mère traverse une épreuve difficile face au cancer. Chaque contribution, même petite, nous rapproche de ses soins et lui donne une chance de continuer son combat.</p>
+      <a class="primary-btn" href="#don">♥ Je veux aider</a>
+      <div class="trust">100% des dons sont destinés aux frais de soins et aux besoins liés à son traitement.</div>
+    </div>
+    <div class="scroll">↓</div>
+  </header>
+
+  <main>
+    <section class="story">
+      <div class="section-label">SON COMBAT</div>
+      <h2>Elle a besoin de nous maintenant.</h2>
+      <p>Le cancer bouleverse une famille entière. Nous faisons tout notre possible pour financer les consultations, examens, médicaments et traitements. Votre aide peut faire une différence concrète.</p>
+      <div class="stats">
+        <div><strong>♥</strong><span>Chaque geste compte</span></div>
+        <div><strong>∞</strong><span>Chaque partage aide</span></div>
+        <div><strong>🙏</strong><span>Merci pour votre soutien</span></div>
+      </div>
+    </section>
+
+    <section id="don" class="don-section">
+      <div class="don-card">
+        <div class="section-label">FAIRE UN DON</div>
+        <h2>Choisissez votre montant</h2>
+        <p class="muted">Sélectionnez un montant, puis utilisez votre service Mobile Money pour effectuer le transfert.</p>
+
+        <div class="amounts">
+          <button data-amount="1000">1 000 FCFA</button>
+          <button data-amount="2500">2 500 FCFA</button>
+          <button data-amount="5000">5 000 FCFA</button>
+          <button data-amount="10000">10 000 FCFA</button>
+          <button data-amount="25000">25 000 FCFA</button>
+          <label class="custom">
+            <span>Autre montant</span>
+            <input id="customAmount" type="number" min="100" step="100" placeholder="FCFA">
+          </label>
+        </div>
+
+        <div class="payment-box">
+          <span>Collecte au nom de <b>ALBAN DANIEL</b></span>
+          <div class="number-row">
+            <strong id="donationNumber">À REMPLACER</strong>
+            <button id="copyBtn" class="small-btn">Copier</button>
+          </div>
+          <p id="amountText">Montant sélectionné : <b>—</b></p>
+          <button id="mobileBtn" class="primary-btn full">📱 Ouvrir le paiement</button>
+          <p class="warning">Le paiement automatique nécessite une intégration officielle Orange Money / MTN MoMo. Cette page ne collecte pas les codes PIN et ne demande jamais votre mot de passe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="share">
+      <div>
+        <div class="section-label">AIDEZ-NOUS À FAIRE PASSER LE MESSAGE</div>
+        <h2>Un partage peut toucher la bonne personne.</h2>
+        <p>Partagez cette page à votre famille, vos amis et vos réseaux. Même si vous ne pouvez pas donner, votre partage peut aider.</p>
+      </div>
+      <button id="shareBtn" class="outline-btn">↗ Partager la campagne</button>
+    </section>
+  </main>
+
+  <footer>
+    <div>♥ Avec amour et espoir</div>
+    <small>Campagne de soutien — ALBAN DANIEL</small>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
